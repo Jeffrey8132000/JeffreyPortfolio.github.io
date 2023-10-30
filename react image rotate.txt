@@ -1,0 +1,18 @@
+\\rotate the image
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+//add background image
+body{
+  background-image: url('/public/background.jpg'); /* Replace with the actual path to your image in the public directory */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100%;
+}
