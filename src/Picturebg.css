@@ -1,0 +1,99 @@
+  .App-logo {
+    height: 360px;
+    width: 360px;
+    margin-bottom: -50px;
+    overflow: hidden;
+    pointer-events: none;
+    opacity: 90%;
+    
+  }
+
+  .CircleContainer
+  {
+    width: 370px;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: dashed #ff009d 2px; */
+    border-radius: 50%;
+    overflow: hidden;
+    
+  }
+
+  .box
+  {
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(to bottom, #00c3ff, #ff009d);
+    animation: rotateContainer 3s linear infinite;
+    
+  }
+
+  .Circle
+  {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    /* border: solid #00c3ff 1px; */
+    background-color:black;
+    overflow: hidden;
+ 
+  }
+  
+  @keyframes rotateContainer {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }  
+
+  .container
+  {
+    display: flex;
+    height: 100px;
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+  }
+  .image
+  {
+    position: absolute;
+    margin: 5px;
+    height: 64px;
+    width: 64px;
+    transition: opacity 0.1s, transform 0.4s;
+    z-index: 1;
+  }
+.imageColored
+{
+  margin: 5px;
+  height: 68px;
+  width: 68px;
+  opacity: 0;
+  transition: opacity 0.1s, transform 0.4s;
+  z-index: 2;
+  transform: translateY(5px);
+}
+
+.image-container:hover .image
+{
+opacity: 0;
+transform: translateY(5px);
+cursor: pointer;
+}
+.image-container:hover .imageColored
+{
+  opacity: 1;
+  transform: translateY(-15px);
+  cursor: pointer;
+}
