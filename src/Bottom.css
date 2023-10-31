@@ -116,8 +116,8 @@ a
     text-align: center;
     align-items: center;
     background-color: rgba(177, 176, 176, 0.9);
-    
 }
+/*college*/
 .college
 {
 height: auto;
@@ -138,6 +138,7 @@ flex: 1;
     width: 200px;
     height: 200px;
 }
+/*school year*/
 .school
 {
     display: flex;
@@ -145,6 +146,7 @@ flex: 1;
     flex-direction: column;
     justify-content: center;
 }
+/*highschool*/
 .highschool
 {
     height: auto;
@@ -164,6 +166,7 @@ flex: 1;
     width: 200px;
     height: 200px;
 }
+/*elem*/
 .elementary
 {
     height: auto;
@@ -197,4 +200,205 @@ flex: 1;
 h2, h3
 {
     margin: 0;
+}
+
+@media screen and (max-width:500px)
+{
+.bottom
+{
+    width: 100%;
+    position: absolute;
+    background-color: #fbfaf8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.divaboutme
+{
+height: auto;
+margin: 5px;
+padding: 10px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+flex: 1;
+}
+.about
+{
+    width: 50%;
+}
+.aboutme
+{
+    font-size: 10px;
+    color: black;
+    font-weight:1000;
+    font-family:sans-serif;
+}
+.aboutmeparagraph
+{
+    font-size: 10px;
+    font-style: normal;
+    text-align: justify;
+    color: black;
+}
+.monke
+{
+    overflow: hidden;
+    margin: 15px;
+    flex: 1;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 20px;
+}
+.educbg
+{
+    font-size: 8px;
+    width: 100%;
+    height: auto;
+    font-family:sans-serif;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(177, 176, 176, 0.9);
+}
+.school
+{
+    font-size: 8px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+/*college*/
+.college
+{
+height: auto;
+margin: 3px;
+padding: 5px;
+display: flex;
+flex-direction: row;
+flex: 1;
+}
+.ndmu
+{
+    overflow: hidden;
+    flex: 1; 
+}
+.ndmupic
+{
+    width: 100px;
+    height: 100px;
+}
+/*highschool*/
+.highschool
+{
+    height: auto;
+    margin: 3px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex: 1; 
+}
+.knchs
+{
+    overflow: hidden;
+    flex: 1; 
+}
+.knchspic
+{
+    width: 100px;
+    height: 100px;
+}
+/*elem*/
+.elementary
+{
+    height: auto;
+    margin: 3px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+.kces2
+{
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+}
+.kces2cover
+{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.kces2img
+{
+    width: 100px;
+    height: 100px;
+}
+h2, h3
+{
+    margin: 0;
+}
+/**/
+.Contactinfo
+{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.facebook
+{
+    color: #fbfaf8;
+    display: flex;
+    align-items: center;
+    max-height: 20px;
+}
+.facebookpng
+{
+    width: auto;
+    height: 20px;
+}
+.email
+{
+    color: #fbfaf8;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+}
+.emailpng
+{
+    width: auto;
+    height: 20px;
+    margin-right: 5px;
+}
+.phone
+{
+    color: #fbfaf8;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.iphonepng
+{
+    width: auto;
+    height: 20px;
+}
+a
+{
+    color: #fbfaf8;
+    text-decoration: none;
+    font-size: 8px;
+}
+.num
+{
+    font-size: 8px;
+}
 }

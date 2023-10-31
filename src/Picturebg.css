@@ -5,7 +5,6 @@
     overflow: hidden;
     pointer-events: none;
     opacity: 90%;
-    
   }
 
   .CircleContainer
@@ -18,7 +17,6 @@
     /* border: dashed #ff009d 2px; */
     border-radius: 50%;
     overflow: hidden;
-    
   }
 
   .box
@@ -27,7 +25,6 @@
     height: 100%;
     background: linear-gradient(to bottom, #00c3ff, #ff009d);
     animation: rotateContainer 3s linear infinite;
-    
   }
 
   .Circle
@@ -42,7 +39,6 @@
     /* border: solid #00c3ff 1px; */
     background-color:black;
     overflow: hidden;
- 
   }
   
   @keyframes rotateContainer {
@@ -96,4 +92,100 @@ cursor: pointer;
   opacity: 1;
   transform: translateY(-15px);
   cursor: pointer;
+}
+
+/*for cellphone*/
+@media screen and (max-width:500px) 
+{
+  .CircleContainer
+  {
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: dashed #ff009d 2px; */
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .Circle
+  {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    /* border: solid #00c3ff 1px; */
+    background-color:black;
+    overflow: hidden;
+  }
+  .box
+  {
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(to bottom, #00c3ff, #ff009d);
+    animation: rotateContainer 3s linear infinite;
+  }
+  @keyframes rotateContainer {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .App-logo {
+    height: 250px;
+    width: 250px;
+    margin-bottom: -50px;
+    overflow: hidden;
+    pointer-events: none;
+    opacity: 90%;
+  }
+  /*the icons below my picture*/
+  .container
+  {
+    display: flex;
+    height: 100px;
+    width: fit-content;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+  }
+  .image
+  {
+    position: absolute;
+    margin: 3cqb;
+    height: 43px;
+    width: 43px;
+    transition: opacity 0.1s, transform 0.4s;
+    z-index: 1;
+  }
+.imageColored
+{
+  margin: 1px;
+  height: 60px;
+  width: 60px;
+  opacity: 0;
+  transition: opacity 0.1s, transform 0.4s;
+  z-index: 2;
+  transform: translateY(0px);
+}
+.image-container:hover .image
+{
+opacity: 0;
+transform: translateY(0px);
+cursor: pointer;
+}
+.image-container:hover .imageColored
+{
+  opacity: 1;
+  transform: translateY(-20px);
+  cursor: pointer;
+}
+  
 }
