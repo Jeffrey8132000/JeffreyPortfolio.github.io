@@ -49,6 +49,7 @@ flex: 1;
     flex: 1;
     height: fit-content;
     width: fit-content;
+    border-radius: 20px;
 }
 .Contactinfo
 {
@@ -111,9 +112,6 @@ a
 {
     width: 100%;
     height: auto;
-    font-size: 25px;
-    color: black;
-    font-weight:1000;
     font-family:sans-serif;
     text-align: center;
     align-items: center;

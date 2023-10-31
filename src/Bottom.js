@@ -30,7 +30,7 @@ class Bottom extends React.Component {
                 </div>
 
                 <div className='educbg'>
-                  <p>EDUCATIONAL BACKGROUND</p>
+                  <h1>EDUCATIONAL BACKGROUND</h1>
                 </div>
 
                 <div className='college'>

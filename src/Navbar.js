@@ -22,7 +22,7 @@ function Navbar() {
 
   return (
     <nav className="navbar" style={{ top: visible ? '0' : '-54px' }}>
-      <ul>
+      <ul className='nav-name'>
         <li className="nav-item-name">Jeffrey Bon Auster A. Villasenor</li>
       </ul>
       <ul className="nav-list">
