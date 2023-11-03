@@ -175,17 +175,16 @@ cursor: pointer;
   z-index: 2;
   transform: translateY(0px);
 }
-.image-container:hovered .image
+.image-container .image:hover
 {
 opacity: 0;
 transform: translateY(0px);
 cursor: pointer;
 }
-.image-container:hovered .imageColored
+.image-container .imageColored:hover
 {
   opacity: 1;
   transform: translateY(-20px);
   cursor: pointer;
 }
-  
 }

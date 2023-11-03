@@ -10,7 +10,8 @@ class Picturebg extends React.Component
 
    imageColored.forEach(image => {
     let touchStartX = 0;
-
+    let isHovered = false;
+    
     image.addEventListener('touchstart', (e) => {
         e.preventDefault();
         touchStartX = e.touches[0].clientX;
@@ -29,7 +30,9 @@ class Picturebg extends React.Component
         }
     });
     image.addEventListener('touchend', () => {
-        image.classList.remove('hovered');
+        if (!isHovered) {
+            image.classList.remove('hovered');
+          }
     });
    });         
 }
