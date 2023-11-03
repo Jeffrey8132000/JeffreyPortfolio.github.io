@@ -3,40 +3,6 @@ import './Picturebg.css';
 
 class Picturebg extends React.Component
 {
-    componentDidMount()
-    {
-
-   const imageColored = document.querySelectorAll('.imageColored');
-
-   imageColored.forEach(image => {
-    let touchStartX = 0;
-    let isHovered = false;
-    
-    image.addEventListener('touchstart', (e) => {
-        e.preventDefault();
-        touchStartX = e.touches[0].clientX;
-       image.classList.add('hovered');
-    });
-
-    image.addEventListener('touchmove', (e) => {
-        e.preventDefault();
-        const touchX = e.touches[0].clientX;
-        if(touchX < touchStartX)
-        {
-            image.classList.remove('hovered');
-        }
-        else{
-            image.classList.add('hovered');
-        }
-    });
-    image.addEventListener('touchend', () => {
-        if (!isHovered) {
-            image.classList.remove('hovered');
-          }
-    });
-   });         
-}
-
 render()
 {
     return(
@@ -47,6 +13,7 @@ render()
                     
                 <div className="Circle">
                 <img src="mypic.png" className="App-logo" alt="logo" />
+                <img src="marlou.png" className="marlou" />
                 </div>
                 </div>
 
