@@ -22,7 +22,7 @@ class Bottom extends React.Component {
                     contribute to your dynamic team.
                     </p>
 
-                    <a class="aboutmeparagraph" target='_blank' href="https://drive.google.com/file/d/1JXOlfJmlMRCyPj-XiuVJbEKM-zi4KrP6/view?usp=drive_link" download="Resume.pdf">-Download Resume-</a>
+                    <a  class="resume" target='_blank' href="https://drive.google.com/file/d/1JXOlfJmlMRCyPj-XiuVJbEKM-zi4KrP6/view?usp=drive_link" download="Resume.pdf">-Download Resume-</a>
 
                     </div>
 

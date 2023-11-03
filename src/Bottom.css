@@ -40,8 +40,17 @@ flex: 1;
     font-style: normal;
     text-align: justify;
     color: black;
-}
 
+}
+.resume
+{
+    padding: 5px;
+    font-size: 20px;
+    font-style: normal;
+    text-align: justify;
+    color: black;
+    border:dashed black 2px;
+}
 .monke
 {
     overflow: hidden;

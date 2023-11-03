@@ -5,17 +5,12 @@
     overflow: hidden;
     pointer-events: none;
     opacity: 90%;
+    transform: transform 0.2s;
   }
-.marlou
+.App-logo:hover
 {
-  position: absolute;
-  height: 320px;
-  width: 320px;
-  overflow: hidden;
-  pointer-events: none;
-  opacity: 0;
+  transform: scale(1.1);
 }
-
   .CircleContainer
   {
     width: 370px;
@@ -50,16 +45,6 @@
     overflow: hidden;
   }
 
-  .Circle:hover .App-logo
-  {
-    opacity: 0;
-    cursor: pointer;
-  }
-  .Circle:hover .marlou
-  {
-    opacity: 1;
-    cursor: pointer;
-  }
   
   @keyframes rotateContainer {
     0% {
@@ -164,25 +149,6 @@ cursor: pointer;
     pointer-events: none;
     opacity: 90%;
   }
-  .marlou
-{
-  position: absolute;
-  height: 220px;
-  width: 220px;
-  overflow: hidden;
-  pointer-events: none;
-  opacity: 0;
-}
-.Circle:hover .App-logo
-{
-  opacity: 0;
-  cursor: pointer;
-}
-.Circle:hover .marlou
-{
-  opacity: 1;
-  cursor: pointer;
-}
   /*the icons below my picture*/
   .container
   {
