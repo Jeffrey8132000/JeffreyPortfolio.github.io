@@ -3,6 +3,37 @@ import './Picturebg.css';
 
 class Picturebg extends React.Component
 {
+    componentDidMount()
+    {
+
+   const imageColored = document.querySelectorAll('.imageColored');
+
+   imageColored.forEach(image => {
+    let touchStartX = 0;
+
+    image.addEventListener('touchstart', (e) => {
+        e.preventDefault();
+        touchStartX = e.touches[0].clientX;
+       image.classList.add('hovered');
+    });
+
+    image.addEventListener('touchmove', (e) => {
+        e.preventDefault();
+        const touchX = e.touches[0].clientX;
+        if(touchX < touchStartX)
+        {
+            image.classList.remove('hovered');
+        }
+        else{
+            image.classList.add('hovered');
+        }
+    });
+    image.addEventListener('touchend', () => {
+        image.classList.remove('hovered');
+    });
+   });         
+}
+
 render()
 {
     return(
