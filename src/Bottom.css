@@ -50,6 +50,13 @@ flex: 1;
     text-align: justify;
     color: black;
     border:dashed black 2px;
+    border-radius: 10px;
+}
+.resume:hover{
+    background-color: aqua;
+    color: black;
+    border:dashed red 1px;
+    border-radius: 10px;
 }
 .monke
 {
@@ -250,10 +257,26 @@ flex: 1;
     text-align: justify;
     color: black;
 }
+.resume
+{
+    padding: 2px;
+    font-size: 10px;
+    font-style: normal;
+    text-align: justify;
+    color: black;
+    border:dashed black 1px;
+    border-radius: 5px;
+}
+.resume:hover{
+    background-color: aqua;
+    color: black;
+    border:dashed red 1px;
+    border-radius: 5px;
+}
 .monke
 {
     overflow: hidden;
-    margin: 15px;
+    margin: 5px;
     flex: 1;
     height: fit-content;
     width: fit-content;

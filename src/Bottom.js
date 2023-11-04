@@ -75,9 +75,6 @@ class Bottom extends React.Component {
                       <p className='num'>09635430620</p>
                     </div>
                 </div>
-                
-
-
         </div>
     );
   }
